@@ -1,20 +1,20 @@
 <template>
-  <AppHeader />
-  <AppMain />
-  <AppFooter />
+  <HeaderComponent />
+  <div id="content" class="cont" :class="{ main: $route.name === 'MainHome' }">
+    <router-view></router-view>
+  </div>
+  <FooterComponent />
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue'; // 변경된 이름으로 import
-import AppMain from './components/AppMain.vue'; // 변경된 이름으로 import
-import AppFooter from './components/AppFooter.vue'; // 변경된 이름으로 import
+import HeaderComponent from './components/layout/HeaderComponent.vue'; // 변경된 이름으로 import
+import FooterComponent from './components/layout/FooterComponent.vue'; // 변경된 이름으로 import
 
 export default {
   name: 'App',
   components: {
-    AppHeader,
-    AppMain,
-    AppFooter
+    HeaderComponent,
+    FooterComponent
   }
 };
 </script>
@@ -22,7 +22,6 @@ export default {
 <style>
 
 </style>
-
 
 
 <!-- <template>
@@ -51,3 +50,14 @@ export default {
   margin-top: 60px;
 }
 </style> -->
+
+
+
+
+
+
+
+
+
+
+

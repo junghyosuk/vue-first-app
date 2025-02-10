@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 공통 CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <!-- font CSS --> 
+    <link rel="stylesheet" href="/assets/css/font.css"> 
+    <!-- Main Home CSS-->
+    <link rel="stylesheet" href="/assets/css/main.css"> 
+    <!-- slick.js CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> 
+    <!-- slick theme CSS-->
+    <link rel="stylesheet" href="/assets/css/slick-theme.css"> 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/assets/js/main_cont.js"></script>
+    <!-- 공통 JS -->
+    <!-- <script src="<%= BASE_URL %>assets/js/main_cont.js"></script>  -->
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <noscript>
+    <!-- <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+    </noscript> -->
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
