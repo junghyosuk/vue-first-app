@@ -139,7 +139,41 @@
 </template>
 
 <script>
+import { onMounted, nextTick } from 'vue';
+import $ from 'jquery';
+import 'slick-carousel'; // slick-carousel 로드
+
 export default {
-  name: 'MainHome'
+  name: 'MainHome',
+  setup() {
+    // slick 초기화 함수
+    const initSlick = () => {
+      nextTick(() => {
+        // 배너 슬라이드
+        $(".section_banner").not('.slick-initialized').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: "linear",
+          autoplay: true,
+          autoplaySpeed: 3000
+        });
+
+        // 상품 리스트 슬라이드 (문제되는 부분)
+        $(".slick_list").not('.slick-initialized').slick({
+          infinite: true,
+          slidesToShow: 3,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: true
+        });
+      });
+    };
+
+    onMounted(() => {
+      initSlick();
+    });
+  }
 };
 </script>

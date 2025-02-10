@@ -79,7 +79,7 @@
 
 
 /* 상품리스트 */
-.cont_product .tit_product{padding:20px 0 40px;font-size:30px;text-align:center}
+.tit_product{padding:20px 0 40px;font-size:30px;text-align:center}
 .wrap_filter{padding-bottom:30px}
 .wrap_filter .inner_filter{padding:12px 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
 .wrap_filter .list_filter{float:left;}

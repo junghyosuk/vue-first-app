@@ -68,7 +68,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 
 .wrap_gnb{padding-left:60px;}
 .list_gnb{overflow:hidden;}
-.list_gnb li{float:left;}
+.list_gnb li{float:left}
 .list_gnb li:hover{background-color:#f4f4f4;}
 .list_gnb .link_gnb{display:block;padding:0 25px;font-size:17px;}
 
@@ -88,7 +88,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .wrap_head.admin+.cont_article{padding:45px 0 60px;}
 
 /* Article(Content) */
-.cont_article{width:1024px;margin:0 auto;padding:25px 0;}
+.cont{width:1024px;margin:0 auto;padding:25px 0;}
 
 /* 푸터 */
 .wrap_foot{border-top:1px solid #ccc;background-color:#fff}
